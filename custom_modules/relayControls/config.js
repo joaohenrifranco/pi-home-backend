@@ -9,21 +9,21 @@ const FILE_PATH = path.join('/home/pi/buttons.json');
 const DEFAULT_CONFIG = [
   {
     pin: 17,
-    label: 'White Light',
+    label: 'Luz Vermelha',
     status: false,
-    color: 'blue',
+    color: 'red',
     id: 'button1',
     type: 'light'
   }, {
     pin: 4,
-    label: 'Fan',
+    label: 'Luz Verde',
     status: false,
     color: 'green',
     id: 'button2',
-    type: 'fan'
+    type: 'light'
   }, {
     pin: 3,
-    label: 'Yellow Light',
+    label: 'Luz Amarela',
     status: false,
     color: 'yellow',
     id: 'button3',
