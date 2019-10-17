@@ -33,12 +33,10 @@ const DEFAULT_CONFIG = [
 
 
 let BUTTONS = [];
-if (!fs.existsSync(FILE_PATH)) {
-  jsonfile.writeFileSync(FILE_PATH, DEFAULT_CONFIG);
-  BUTTONS = DEFAULT_CONFIG;
-} else {
-  BUTTONS = jsonfile.readFileSync(FILE_PATH);
-}
+
+jsonfile.writeFileSync(FILE_PATH, DEFAULT_CONFIG);
+BUTTONS = DEFAULT_CONFIG;
+
 
 module.exports = {
   getConfig: () => BUTTONS,
