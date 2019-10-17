@@ -20,6 +20,7 @@ module.exports = {
   getStatus: () => {
     return new Promise((resolve, reject) => {
       // initialzationPromise.then(() => {
+      console.log(BUTTONS);
       const buttons = BUTTONS.map(button => {
         return {
           ...button,
